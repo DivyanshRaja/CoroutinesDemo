@@ -6,39 +6,51 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="wrap_content"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSingleNetWorkCall"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/purple_700"
-        android:onClick="startSingleNetworkCallActivity"
+        android:background="@drawable/button_background"
         android:padding="10dp"
         android:text="@string/single_network_call"
+        android:textAllCaps="false"
         android:textColor="@color/white"
+        app:backgroundTint="@null"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="wrap_content"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSeriesNetWorkCall"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="@color/purple_700"
-        android:onClick="startSeriesNetworkCallsActivity"
+        android:background="@drawable/button_background"
         android:padding="10dp"
         android:text="@string/series_network_calls"
-        android:textColor="@android:color/white" />
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@null"
+        app:cornerRadius="10dp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="wrap_content"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnParallelNetWorkCall"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="@color/purple_700"
-        android:onClick="startParallelNetworkCallsActivity"
+        android:background="@drawable/button_background"
         android:padding="10dp"
         android:text="@string/parallel_network_calls"
-        android:textColor="@android:color/white" />
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@null"
+        app:cornerRadius="10dp" />
+
 
 </LinearLayout>

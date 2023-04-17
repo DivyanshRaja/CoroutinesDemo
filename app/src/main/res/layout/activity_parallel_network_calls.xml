@@ -6,12 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".ui.paraller_network_call.ParallelNetworkCallsActivity">
 
+    <include
+        android:id="@+id/headerParallelNetworkCall"
+        layout="@layout/layout_header" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        android:layout_height="match_parent"
-        android:visibility="gone" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerParallelNetworkCall" />
 
     <ProgressBar
         android:id="@+id/progressBar"

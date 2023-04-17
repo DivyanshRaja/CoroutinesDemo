@@ -32,6 +32,9 @@ class ParallelNetworkCallsActivity : AppCompatActivity() {
         binding = ActivityParallelNetworkCallsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.headerParallelNetworkCall.tvTitle.text = getString(R.string.parallel)
+
+
         adapter = AdapterUsers(arrayListOf())
         binding.recyclerView.adapter = adapter
 

@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.example.coroutine_demo.R
 import com.example.coroutine_demo.data.api.ApiHelperImpl
 import com.example.coroutine_demo.data.api.RetrofitBuilder
 import com.example.coroutine_demo.data.local.DatabaseBuilder
@@ -29,6 +30,7 @@ class SeriesNetworkCallsActivity : AppCompatActivity() {
         binding = ActivitySeriesNetworkCallsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.headerSeriesNetworkCall.tvTitle.text = getString(R.string.series)
 
         adapter = AdapterUsers(arrayListOf())
         binding.recyclerView.adapter = adapter

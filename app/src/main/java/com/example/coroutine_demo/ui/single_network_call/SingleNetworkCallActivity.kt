@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.example.coroutine_demo.R
 import com.example.coroutine_demo.data.api.ApiHelperImpl
 import com.example.coroutine_demo.data.api.RetrofitBuilder
 import com.example.coroutine_demo.data.local.DatabaseBuilder
@@ -28,6 +29,8 @@ class SingleNetworkCallActivity : AppCompatActivity() {
 
         binding = ActivitySingleNetworkCallBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.headerSingleNetworkCall.tvTitle.text = getString(R.string.single)
 
         adapter = AdapterUsers(arrayListOf())
         binding.recyclerView.adapter = adapter
