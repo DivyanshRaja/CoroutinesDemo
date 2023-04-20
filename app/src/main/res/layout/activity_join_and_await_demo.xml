@@ -64,13 +64,6 @@
         android:layout_marginBottom="30dp"
         android:src="@drawable/fab_gradient" />
 
-    <!--
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/fab_gradient"
-            app:fabSize="normal"
-            app:layout_anchor="@id/bottomAppBar" />
-    -->
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
