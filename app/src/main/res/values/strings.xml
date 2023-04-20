@@ -4,6 +4,7 @@
     <string name="single_network_call">Single Network Call</string>
     <string name="series_network_calls">Series Network Calls</string>
     <string name="parallel_network_calls">Parallel Network Calls</string>
+    <string name="join_await">Join and Await</string>
     <string name="room_database">Room Database</string>
     <string name="timeout">Timeout</string>
     <string name="try_catch_error">Try-Catch Error</string>
@@ -15,4 +16,8 @@
     <string name="single">Single Network Call</string>
     <string name="series">Series Network Call</string>
     <string name="parallel">Parallel Network Call</string>
+    <string name="profile">Profile</string>
+    <string name="notification">Notification</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
 </resources>

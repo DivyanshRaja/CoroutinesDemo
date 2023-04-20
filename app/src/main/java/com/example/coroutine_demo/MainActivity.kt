@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.coroutine_demo.databinding.ActivityMainBinding
+import com.example.coroutine_demo.ui.awaitjoin.JoinAndAwaitDemoActivity
 import com.example.coroutine_demo.ui.paraller_network_call.ParallelNetworkCallsActivity
 import com.example.coroutine_demo.ui.series_network_calls.SeriesNetworkCallsActivity
 import com.example.coroutine_demo.ui.single_network_call.SingleNetworkCallActivity
@@ -20,6 +21,10 @@ class MainActivity : AppCompatActivity() {
 
 
 
+        binding.btnLunchAsync.setOnClickListener {
+            startActivity(Intent(this@MainActivity, JoinAndAwaitDemoActivity::class.java))
+
+        }
         binding.btnSingleNetWorkCall.setOnClickListener {
             startActivity(Intent(this@MainActivity, SingleNetworkCallActivity::class.java))
 

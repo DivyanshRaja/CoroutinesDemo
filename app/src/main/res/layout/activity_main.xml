@@ -11,9 +11,25 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLunchAsync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:padding="10dp"
+        android:text="@string/join_await"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@null"
+        app:cornerRadius="10dp" />
+
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSingleNetWorkCall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
         android:background="@drawable/button_background"
         android:padding="10dp"
         android:text="@string/single_network_call"
